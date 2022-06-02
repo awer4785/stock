@@ -110,7 +110,7 @@ if($_GET['o'] == 'add') {
 			  					<select class="form-control" name="productName[]" id="productName<?php echo $x; ?>" onchange="getProductData(<?php echo $x; ?>)" >
 			  						<option value="">--เลือก--</option>
 			  						<?php
-			  							$productSql = "SELECT * FROM product WHERE  status = 1 AND quantity != 0";
+			  							$productSql = "SELECT * FROM product WHERE  quantity != 0";
 			  							$productData = $connect->query($productSql);
 
 			  							while($row = $productData->fetch_array()) {									 		
@@ -263,7 +263,7 @@ if($_GET['o'] == 'add') {
 			  					<select class="form-control" name="productName[]" id="productName<?php echo $x; ?>" onchange="getProductData(<?php echo $x; ?>)" >
 			  						<option value="">~~SELECT~~</option>
 			  						<?php
-			  							$productSql = "SELECT * FROM product WHERE active = 1 AND status = 1 AND quantity != 0";
+			  							$productSql = "SELECT * FROM product WHERE status = 1 AND quantity != 0";
 			  							$productData = $connect->query($productSql);
 
 			  							while($row = $productData->fetch_array()) {									 		
