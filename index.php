@@ -4,7 +4,7 @@ require_once 'php_action/db_connect.php';
 session_start();
 
 if(isset($_SESSION['userId'])) {
-	header('location: http://localhost/stock-test/dashboard.php');	
+	header('location: http://localhost/stock/dashboard.php');	
 }
 
 $errors = array();
@@ -43,13 +43,13 @@ if($_POST) {
 				$_SESSION['userId'] = $user_id;
 				$_SESSION['role'] = 1;
 			
-				header('location: http://localhost/stock-test/dashboard.php');	
+				header('location: http://localhost/stock/dashboard.php');	
 			}
 			elseif($role == 2){
 				// set session
 				$_SESSION['userId'] = $user_id;
 				$_SESSION['role'] = 2;			
-				header('location: http://localhost/stock-test/dashboard-staff.php');	
+				header('location: http://localhost/stock/dashboard-staff.php');	
 			}
 			} else{
 				
