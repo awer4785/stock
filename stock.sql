@@ -32,7 +32,7 @@ CREATE TABLE `brands` (
   `brand_name` varchar(255) NOT NULL,
   `brand_active` int(11) NOT NULL DEFAULT 0,
   `brand_status` int(11) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `brands`
@@ -55,7 +55,7 @@ CREATE TABLE `categories` (
   `categories_name` varchar(255) NOT NULL,
   `categories_active` int(11) NOT NULL DEFAULT 0,
   `categories_status` int(11) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `categories`
@@ -112,7 +112,7 @@ CREATE TABLE `orders` (
   `sub_total` float NOT NULL,
   `description` varchar(250) CHARACTER SET utf8 NOT NULL,
   `order_status` int(11) DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `orders`
@@ -141,7 +141,7 @@ CREATE TABLE `order_item` (
   `rate` varchar(255) NOT NULL,
   `total` varchar(255) NOT NULL,
   `order_item_status` int(11) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `order_item`
@@ -177,7 +177,7 @@ CREATE TABLE `product` (
   `rate` varchar(255) NOT NULL,
   `active` int(11) NOT NULL DEFAULT 0,
   `status` int(11) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `product`
@@ -280,7 +280,7 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `role` int(10) NOT NULL DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `users`
